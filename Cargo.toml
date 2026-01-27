@@ -1,0 +1,7 @@
+[package]
+name = "rustc-skill-check-test"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rustc-skill-check = { path = "rustc-skill-check", version = "0.1.0" }

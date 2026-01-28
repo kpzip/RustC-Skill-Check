@@ -1,31 +1,31 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "skillcheck",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Skill Check",
+	"description": "Checks Skill",
 	"authors": [
-		"Me!"
+		"kpzip"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/kpzip/RustC-Skill-Check",
+		"sources": "https://github.com/kpzip/RustC-Skill-Check"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/skillcheck/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"xyz.kpzip.skillcheck.SkillCheck"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"xyz.kpzip.skillcheck.SkillCheckClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"skillcheck.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "skillcheck.client.mixins.json",
 			"environment": "client"
 		}
 	],
@@ -35,7 +35,4 @@
 		"java": ">=21",
 		"fabric-api": "*"
 	},
-	"suggests": {
-		"another-mod": "*"
-	}
 }
